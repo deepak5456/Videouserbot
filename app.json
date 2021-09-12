@@ -1,0 +1,46 @@
+{
+    "name": "video stream 2 (BETA)",
+    "description": "telegram bot for streaming video on group video chat",
+    "keywords": [
+        "telegram",
+        "stream",
+        "video-calls",
+        "pyrogram",
+        "group-calls",
+        "python",
+        "plugin",
+        "modular",
+        "pytgcalls"
+      ],
+    "repository": "https://github.com/levina-lab/video-stream2",
+    "success_url": "/",
+    "logo": "https://telegra.ph/file/8b9cfbe9aaf44f7ff4468.jpg",
+    "website": "https://github.com/levina-lab/video-stream2",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org"
+        },
+        "SUDO": {
+            "description": "User ID of users who have access to use the bot commands, separate each with space."
+        },
+        "SESSION": {
+            "description": "Get the pyrogram session from https://replit.com/@levinalab/StringSession#main.py"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this value from @BotFather",
+            "required": false
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
